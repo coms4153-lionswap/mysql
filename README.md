@@ -1,2 +1,3 @@
 # mysql
-MySQL Database for Identity/User Microservice
+MySQL Database for Identity & Account Microservice
+
