@@ -7,5 +7,5 @@ CREATE TABLE Users (
   phone             VARCHAR(32),
   avatar_url        VARCHAR(512),
   credibility_score DECIMAL(4,2) NOT NULL DEFAULT 0.00, -- 0–5
-  last_seen_at      DATETIME,
+  last_seen_at      DATETIME
 )
