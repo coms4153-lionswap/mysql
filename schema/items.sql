@@ -8,6 +8,7 @@ CREATE TABLE Items (
   category     VARCHAR(80)  NULL,
   `status`     ENUM('Listed','Reserved','Sold','Withdrawn') NOT NULL DEFAULT 'Listed',
   listed_at    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at   DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FULLTEXT KEY fts_items (product_name, description),
   KEY idx_items_listed (listed_at),
   KEY idx_items_price (price),
